@@ -1,12 +1,14 @@
 const mongoose = require("mongoose");
-require("dotenv").config();
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI);
+    await mongoose.connect(process.env.MONGO_URI, {
+      serverSelectionTimeoutMS: 5000,
+      family: 4
+    });
     console.log("MongoDB Connected ✔");
   } catch (error) {
-    console.log("MongoDB connection failed ❌", error);
+    console.log("MongoDB connection failed ❌", error.message);
   }
 };
 
