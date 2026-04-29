@@ -1,7 +1,8 @@
 
   # PocketPlate Frontend
 
-  This is a code bundle for PocketPlate Frontend. The original project is available at https://www.figma.com/design/sVSNGLJsYYFakPijjVL7vO/PocketPlate-Frontend.
+  This is a code bundle for PocketPlate Frontend. The original project is available at 
+  https://greet-coat-42807537.figma.site/
 
   ## Running the code
 
